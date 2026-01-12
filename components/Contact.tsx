@@ -1,6 +1,7 @@
 'use client'
 
 import { MessageCircle, Mail, MapPin, Phone, Clock } from 'lucide-react'
+import ContactForm from './ContactForm'
 
 export default function Contact() {
   const whatsappNumber = '6281234567890'
@@ -58,6 +59,10 @@ export default function Contact() {
           <p className="text-purple-200 text-lg">
             Tim kami siap membantu mewujudkan perjalanan impianmu
           </p>
+        </div>
+
+        <div className="mb-16">
+          <ContactForm />
         </div>
 
         {/* ===== CONTACT CARDS ===== */}
