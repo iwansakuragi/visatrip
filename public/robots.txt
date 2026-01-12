@@ -1,0 +1,10 @@
+# Allow all search engines to crawl
+User-agent: *
+Allow: /
+
+# Disallow admin or private pages (kalau ada nanti)
+# Disallow: /admin
+# Disallow: /api
+
+# Sitemap location (ganti domain nanti pas deploy)
+Sitemap: https://visatrip.com/sitemap.xml
