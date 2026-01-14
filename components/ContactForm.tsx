@@ -109,7 +109,7 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           placeholder="Nama Lengkap"
-          className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-sky-500"
+          className="text-gray-600 w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-sky-500"
         />
 
         <input
@@ -119,7 +119,7 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           placeholder="Email"
-          className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-sky-500"
+          className="text-gray-600 w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-sky-500"
         />
 
         <input
@@ -129,7 +129,7 @@ export default function ContactForm() {
           onChange={handleChange}
           required
           placeholder="WhatsApp"
-          className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-sky-500"
+          className="text-gray-600 w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-sky-500"
         />
 
         <select
@@ -137,9 +137,9 @@ export default function ContactForm() {
           value={formData.service_type}
           onChange={handleChange}
           required
-          className="w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-sky-500"
+          className="text-gray-600 w-full px-4 py-3 border rounded-xl focus:ring-2 focus:ring-sky-500"
         >
-          <option value="">Pilih layanan</option>
+          <option value="" className='text-gray-600'>Pilih layanan</option>
           {serviceTypes.map((s) => (
             <option key={s}>{s}</option>
           ))}
@@ -152,7 +152,7 @@ export default function ContactForm() {
           rows={4}
           required
           placeholder="Pesan Anda"
-          className="w-full px-4 py-3 border rounded-xl resize-none focus:ring-2 focus:ring-sky-500"
+          className="text-gray-600 w-full px-4 py-3 border rounded-xl resize-none focus:ring-2 focus:ring-sky-500"
         />
 
         <button
@@ -165,12 +165,12 @@ export default function ContactForm() {
         >
           {status === 'loading' ? (
             <>
-              <Loader2 className="w-5 h-5 animate-spin" />
+              <Loader2 className="text-gray-600 w-5 h-5 animate-spin" />
               Mengirim...
             </>
           ) : (
             <>
-              <Send className="w-5 h-5" />
+              <Send className="text-gray-600 w-5 h-5" />
               Kirim Pesan
             </>
           )}

@@ -18,6 +18,7 @@ export default function Footer() {
     perusahaan: [
       { name: 'Tentang Kami', href: '#home' },
       { name: 'Testimoni', href: '#testimoni' },
+      { name: 'Blog', href: '#blog' },
       { name: 'Kontak', href: '#kontak' },
       { name: 'FAQ', href: '#home' },
       { name: 'Blog', href: '#home' }
@@ -134,6 +135,19 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+          
+          <div>
+            <a 
+              href="https://g.page/r/12798011063785008940/review"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-purple-400 transition"
+            >
+              <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
+              <span>Google Verified ⭐</span>
+            </a>
+          </div>
+
         </div>
 
         {/* Bottom Footer */}

@@ -77,3 +77,221 @@ html {
 body {
   overflow-x: hidden;
 }
+
+/* ========================================
+   BLOG ARTICLE CONTENT STYLING (PROSE)
+   ======================================== */
+
+.prose {
+  color: #374151; /* slate-700 */
+  max-width: 65ch;
+}
+
+/* ---------- HEADINGS ---------- */
+
+.prose h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.35;
+  color: #0369a1; /* sky-700 */
+}
+
+.prose h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #075985; /* sky-800 */
+}
+
+.prose h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #0f172a; /* slate-900 */
+}
+
+/* ---------- TEXT ---------- */
+
+.prose p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  font-size: 1.125rem;
+}
+
+.prose strong {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.prose em {
+  font-style: italic;
+  color: #475569; /* slate-600 */
+}
+
+/* ---------- LIST ---------- */
+
+.prose ul,
+.prose ol {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.prose ul {
+  list-style-type: disc;
+}
+
+.prose ol {
+  list-style-type: decimal;
+}
+
+.prose li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.75;
+}
+
+.prose li::marker {
+  color: #0ea5e9; /* sky-500 */
+}
+
+/* ---------- LINKS ---------- */
+
+.prose a {
+  color: #0284c7; /* sky-600 */
+  text-decoration: underline;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.prose a:hover {
+  color: #f97316; /* orange-500 */
+}
+
+/* ---------- BLOCKQUOTE ---------- */
+
+.prose blockquote {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1rem 1rem 1.5rem;
+  border-left: 4px solid #0ea5e9; /* sky-500 */
+  background-color: #f0f9ff; /* sky-50 */
+  border-radius: 0.5rem;
+  font-style: italic;
+  color: #475569;
+}
+
+/* ---------- CODE ---------- */
+
+.prose code {
+  background-color: #f1f5f9; /* slate-100 */
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-family: 'Courier New', monospace;
+  color: #ea580c; /* orange-600 */
+}
+
+.prose pre {
+  background-color: #0f172a; /* slate-900 */
+  color: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.prose pre code {
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+  font-size: 0.875rem;
+}
+
+/* ---------- MEDIA ---------- */
+
+.prose img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- HR ---------- */
+
+.prose hr {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-color: #e2e8f0; /* slate-200 */
+}
+
+/* ---------- TABLE ---------- */
+
+.prose table {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+}
+
+.prose th {
+  background-color: #0284c7; /* sky-600 */
+  color: white;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.prose td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.prose tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* ---------- LINE CLAMP ---------- */
+
+.line-clamp-2,
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  -webkit-line-clamp: 3;
+}
+
+/* ========================================
+   RESPONSIVE PROSE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .prose {
+    font-size: 1rem;
+  }
+
+  .prose h2 {
+    font-size: 1.5rem;
+  }
+
+  .prose h3 {
+    font-size: 1.25rem;
+  }
+
+  .prose p {
+    font-size: 1rem;
+  }
+}

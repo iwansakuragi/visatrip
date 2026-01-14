@@ -21,10 +21,11 @@ export default function Navbar() {
   const whatsappMessage = 'Halo Visa Trip, saya tertarik dengan layanan Anda'
 
   const navLinks = [
-    { href: '#home', label: 'Home' },
+    { href: '/', label: 'Home' },
     { href: '#layanan', label: 'Layanan' },
     { href: '#paket', label: 'Paket' },
     { href: '#testimoni', label: 'Testimoni' },
+    { href: '/blog', label: 'Blog' },
     { href: '#kontak', label: 'Kontak' },
   ]
 

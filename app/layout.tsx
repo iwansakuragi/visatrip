@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import WhatsAppFloat from '@/components/WhatsAppFloat'
 import GoogleAnalytics from './GoogleAnalytics'
 import MetaPixel from './MetaPixel'
+import { localBusinessSchema } from './schema'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id">
+      <head>
+        {/* JSON-LD Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+      </head>
       <body className={inter.className}>
         <GoogleAnalytics GA_MEASUREMENT_ID={process.env.NEXT_PUBLIC_GA_ID} />
         <MetaPixel PIXEL_ID={process.env.NEXT_PUBLIC_META_PIXEL_ID} />
