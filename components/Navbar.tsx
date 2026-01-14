@@ -86,15 +86,20 @@ export default function Navbar() {
             ))}
 
             <a
-              href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gradient-to-r from-sky-500 to-orange-500
-                text-white px-6 py-2 rounded-full font-semibold
-                transition transform hover:scale-105 hover:shadow-lg"
-            >
-              Konsultasi Gratis
-            </a>
+  href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    bg-linear-to-r from-sky-600
+    hover:from-orange-400 hover:via-orange-500 hover:to-orange-600
+    text-white px-6 py-2 rounded-full font-semibold
+    transition-all duration-300
+    transform hover:scale-105 hover:shadow-lg
+  "
+>
+  Konsultasi Gratis
+</a>
+
           </div>
 
           {/* MOBILE BUTTON */}
